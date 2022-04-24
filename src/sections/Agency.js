@@ -20,15 +20,18 @@ const Agency = () => {
   );
 };
 const Agence = styled.div`
-  padding: 1rem 0rem;
+  padding: 4rem 0rem;
 `;
 const Text = styled.div`
   h2 {
     color: var(--textClor1);
     padding-bottom: 0.4rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
   p {
     color: var(--textClor2);
+    font-size: 1.4rem;
   }
 `;
 const Wrapper = styled.div`
@@ -36,5 +39,21 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    & {
+      a {
+        margin-top: 2rem;
+        width: 100%;
+      }
+    }
+  }
+  a {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
 `;
 export default Agency;

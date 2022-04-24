@@ -34,5 +34,11 @@ const CardsWrapper = styled.div`
   align-items: center;
   gap: 1rem;
   padding: 3rem 0rem;
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
 `;
 export default OurTeam;

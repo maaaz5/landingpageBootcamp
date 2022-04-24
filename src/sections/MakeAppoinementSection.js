@@ -52,28 +52,36 @@ const MakeAppoinementSection = () => {
   );
 };
 const Appoi = styled.div`
-  padding: 7rem 0rem;
+  padding: 8rem 0rem;
   background: url(${bg});
-  background-position: top;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 
   form {
     width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
     textarea {
       resize: none;
       width: 100%;
-      height: 140px;
-      border: 1px solid var(--mutedClr);
+      height: 14rem;
+      border: 0.1rem solid var(--mutedClr);
       outline: none;
-      border-radius: 4px;
+      border-radius: 0.4rem;
       padding: 0.6rem 0.8rem;
       margin-bottom: 1rem;
+      font-size: 1.6rem;
     }
     div {
       display: flex;
       gap: 1rem;
       margin-bottom: 1rem;
+      @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+      }
       input + input,
       select + select {
         padding-right: 2rem;
@@ -81,10 +89,14 @@ const Appoi = styled.div`
       input,
       select {
         width: 50%;
-        border: 1px solid var(--mutedClr);
+        border: 0.1rem solid var(--mutedClr);
         outline: none;
-        border-radius: 4px;
-        padding: 0.6rem 0.8rem;
+        border-radius: 0.4rem;
+        padding: 0.8rem 0.8rem;
+        font-size: 1.4rem;
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -94,12 +106,22 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  a {
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
 `;
 const TextWrapper = styled.div`
-  color: var(--textClor1);
   margin-bottom: 3rem;
+  color: var(--textClor1);
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
   }
 `;
 export default MakeAppoinementSection;

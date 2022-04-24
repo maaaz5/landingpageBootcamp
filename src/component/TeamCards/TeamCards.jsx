@@ -27,14 +27,14 @@ const Card = styled.div`
   }
   h5 {
     color: var(--textClor1);
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 1.6rem;
   }
   h6 {
     color: var(--textClor2);
-    font-weight: bold;
-    font-size: 14px;
-    padding: 0.4rem 0rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 0.8rem 0rem;
   }
   .Social {
     color: var(--textClor1);

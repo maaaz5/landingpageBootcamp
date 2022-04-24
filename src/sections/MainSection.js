@@ -25,10 +25,18 @@ const Mainsection = styled.div`
   background-size: cover;
 `;
 const Content = styled.div`
-  padding: 2.8rem 0rem;
+  padding: 6rem 0rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
+
 export default MainSection;

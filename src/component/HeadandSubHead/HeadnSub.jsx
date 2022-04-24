@@ -15,15 +15,15 @@ const Wrapper = styled.div`
   padding-bottom: 2rem;
   text-align: center;
   h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     color: var(--textClor1);
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
   }
   p {
-    font-size: 01rem;
+    font-size: 1.4rem;
     color: var(--textClor2);
-    font-weight: medium;
+    font-weight: 700;
   }
 `;
 

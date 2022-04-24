@@ -8,7 +8,7 @@ export const BtnRounded = styled.a`
   color: ${(props) => `${props.Clr}`};
   border: ${(props) =>
     props.outLine ? `1px solid ${props.outLine}` : "transparent"};
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 1.8rem;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 `;

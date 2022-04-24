@@ -39,8 +39,19 @@ const Form = () => {
   );
 };
 const Wrapper = styled.div`
+  width: 50%;
+  @media screen and (max-width: 800px) {
+    width: 60%;
+    margin-top: 7rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
   h2 {
     text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--textClor1);
   }
   width: 30%;
   border-radius: 10px;
@@ -65,7 +76,10 @@ const Wrapper = styled.div`
       width: 100%;
     }
     label {
-      padding: 1rem 0rem;
+      padding: 2rem 0rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--textClor1);
     }
     input,
     select {
@@ -73,8 +87,9 @@ const Wrapper = styled.div`
       outline: none;
       border-radius: 10px;
       background-color: #f9f9f9;
-      font-size: 1rem;
+      font-size: 1.4rem;
       padding: 0.8rem 0.7rem;
+      background-color: #f9f9f9;
     }
   }
 `;

@@ -27,22 +27,37 @@ const Heading = () => {
 };
 const HeadingCol = styled.div`
   width: 60%;
+  @media screen and (max-width: 650px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
   h1 {
     color: var(--textClor1);
-    font-size: 4rem;
+    font-size: 5.8rem;
   }
   p {
     padding: 2rem 0rem;
     color: var(--textClor2);
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-weight: 500;
   }
 `;
 const Btns = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media screen and (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   a {
     margin-right: 1rem;
+    @media screen and (max-width: 650px) {
+      margin: 1rem 0rem 0rem 0rem;
+    }
   }
 `;
 export default Heading;

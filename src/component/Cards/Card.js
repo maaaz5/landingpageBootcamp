@@ -16,8 +16,6 @@ const Card = (props) => {
 };
 const Wrapper = styled.div`
   text-align: left;
-
-  padding: 1rem 0rem;
 `;
 const CardHeader = styled.div`
   border-radius: 10px 10px 0px 0px;
@@ -31,11 +29,13 @@ const CardHeader = styled.div`
   h4 {
     margin-left: 1rem;
     color: var(--textClor1);
+    font-size: 1.6rem;
+    font-weight: 600;
   }
   svg {
     background-color: white;
     padding: 1rem;
-    font-size: 4rem;
+    font-size: 6rem;
     border-radius: 50%;
     color: var(--primaryClr);
   }
@@ -52,10 +52,12 @@ const CardBody = styled.div`
     margin-bottom: 1rem;
     li {
       padding: 0.5rem 0rem;
+      font-size: 1.4rem;
     }
   }
   a {
     color: var(--primaryClr);
+    font-size: 1.4rem;
   }
 `;
 export default Card;

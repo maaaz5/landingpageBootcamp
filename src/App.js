@@ -6,6 +6,7 @@ import ClientSection from "./sections/ClientSection";
 import OurTeam from "./sections/OurTeam";
 import MakeAppoinementSection from "./sections/MakeAppoinementSection";
 import Agency from "./sections/Agency";
+import FooterSection from "./sections/FooterSection";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       <OurTeam />
       <MakeAppoinementSection />
       <Agency />
+      <FooterSection />
     </div>
   );
 }

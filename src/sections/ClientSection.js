@@ -33,7 +33,14 @@ const CardsWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   padding: 4rem 0rem;
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export default ClientSection;

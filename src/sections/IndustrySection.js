@@ -35,5 +35,12 @@ const CardsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding: 4rem 0rem;
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
 `;
 export default IndustrySection;

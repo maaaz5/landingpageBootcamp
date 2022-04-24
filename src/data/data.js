@@ -119,3 +119,27 @@ export const ClientsData = [
     job: "Designer",
   },
 ];
+
+export const NavData = [
+  {
+    title: "Company Info",
+    links: ["About Us", "Carrier", "We are hiring", "Blog"],
+  },
+  {
+    title: "Legal",
+    links: ["About Us", "Carrier", "We are hiring", "Blog"],
+  },
+  {
+    title: "Features",
+    links: [
+      "Buisness Marketing",
+      "User Analytics",
+      "Live Chat",
+      "Unlimited Support",
+    ],
+  },
+  {
+    title: "Features",
+    links: ["IOS & Android", "Watch a Demo", "Customers", "API"],
+  },
+];
