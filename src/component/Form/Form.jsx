@@ -7,10 +7,10 @@ const Form = () => {
       <h2>Book Appoinement</h2>
       <form>
         <label htmlFor="Name">Name*</label>
-        <input type="text" name="Name" />
+        <input type="text" name="Name" placeholder="Full Name" />
 
         <label htmlFor="Email">Email*</label>
-        <input type="email" name="Email" />
+        <input type="email" name="Email" placeholder="exemple@exemple.com" />
 
         <label htmlFor="Departement">Departement*</label>
         <select name="Departement" id="Departement">
@@ -39,6 +39,10 @@ const Form = () => {
   );
 };
 const Wrapper = styled.div`
+  h2 {
+    text-align: center;
+  }
+  width: 30%;
   border-radius: 10px;
   padding: 2rem;
   background-color: #ffffff;
@@ -69,8 +73,8 @@ const Wrapper = styled.div`
       outline: none;
       border-radius: 10px;
       background-color: #f9f9f9;
-      font-size: 1.2rem;
-      padding: 0.4rem 0.4rem;
+      font-size: 1rem;
+      padding: 0.8rem 0.7rem;
     }
   }
 `;

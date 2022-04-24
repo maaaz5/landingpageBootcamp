@@ -7,10 +7,18 @@ const Heading = () => {
       <h1>Business Advisory Services Provider</h1>
       <p>We know how large objects will act, but things on a small scale.</p>
       <Btns>
-        <BtnRounded bgClr="var(--primaryClr)" Clr="var(--lightClr)">
+        <BtnRounded
+          radius="30px"
+          bgClr="var(--primaryClr)"
+          Clr="var(--lightClr)"
+        >
           Get Quote Now
         </BtnRounded>
-        <BtnRounded Clr="var(--secondaryClr1)" outLine="var(--secondaryClr1)">
+        <BtnRounded
+          radius="30px"
+          Clr="var(--secondaryClr1)"
+          outLine="var(--secondaryClr1)"
+        >
           Learn More
         </BtnRounded>
       </Btns>
@@ -18,7 +26,7 @@ const Heading = () => {
   );
 };
 const HeadingCol = styled.div`
-  width: 50%;
+  width: 60%;
   h1 {
     color: var(--textClor1);
     font-size: 4rem;
